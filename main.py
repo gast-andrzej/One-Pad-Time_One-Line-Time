@@ -1,0 +1,2 @@
+def One_Pad_Time(message= input('Your Message: '), key=input('Your Key (Must be longer than your message): ')): return print(f"Your code message {''.join(list(chr(i) for i in list(map(lambda *i: sum(i), *[list(ord(i) for i in message), list(ord(i) for i in key)]))))} and in numbers for ord is {list(map(lambda *i: sum(i), *[list(ord(i) for i in message), list(ord(i) for i in key)]))}")
+One_Pad_Time()
